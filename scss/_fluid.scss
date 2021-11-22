@@ -1,0 +1,52 @@
+.fluid {
+    padding: 145px 0 68px;
+    text-align: center;
+    max-width: 950px;
+    margin: 0 auto;
+    &-text {
+        span {
+            font-size: 33px;
+            font-family: "Satisfy";
+            color: $primary-color;
+            font-weight: 400;
+        }
+        h1 {
+            color: $text-color;
+            font-size: 65px;
+            line-height: 1.092307692307692em;
+            font-weight: 600;
+            letter-spacing: -0.05em;
+            margin: 0;
+        }
+        p {
+            font-weight: 400;
+            color: #505050;
+            font-size: 17px;
+            margin: 12px 0 0;
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .fluid {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .fluid {
+        &-text {
+            span {
+                font-size: 33px;
+            }
+            h1 {
+                font-size: 35px;
+            }
+            p {
+                font-size: 17px;
+            }
+        }
+    }
+    
+}

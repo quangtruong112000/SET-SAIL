@@ -1,0 +1,114 @@
+.sport {
+    position: relative;
+    .container {
+        padding: 0 0 130px;
+        width: 100%;
+        .sport-text {
+            margin: 0 15px;
+            padding: 101px 0 47px;
+            text-align: center;
+            span {
+                width: 100%;
+                font-size: 33px;
+                font-family: "Satisfy";
+                color: #3fd0d4;
+                line-height: 1.8em;
+            }
+            h1 {
+                font-weight: 600;
+                font-size: 65px;
+                letter-spacing: -0.05em;
+                line-height: 1.092307692307692em;
+            }
+        }
+        .sport-vid {
+            position: relative;
+            max-width: 723px;
+            padding: 0 15px;
+            margin: 0 auto;
+
+            .sport-link{
+                img {
+                    max-width: 723px;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                a {
+                    position: absolute;
+                    left: 47%;
+                    top: 30%;
+                    text-align: center;
+                    .circle {
+                        background-color: #3fd0d4;
+                        border-radius: 50%;
+                        min-width: 69px;
+                        min-height: 69px;
+                        i {
+                            color: white;
+                            margin: 27px 26px;
+                        }
+                    }
+                }
+            }
+            .sport-desc {
+                width:100%;
+                margin-top: 28px;
+                text-align: center;
+                padding-bottom: 31px;
+                p {
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+            .sport-btn {
+                text-align: center;
+                a {
+                    color: white;
+                    background-color: #3fd0d4;
+                    text-decoration: none;
+                    padding: 18px 66px;
+                    font-size: 13px;
+                    font-weight: 600;
+                    letter-spacing: .1rem;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .sport {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .sport {
+        .container {
+            .sport-text {
+                span {
+                 font-size: 33px;
+                }
+                h1 {
+                 font-size: 35px;
+                }
+            }
+            .sport-vid {
+                .sport-link{
+                    a {
+                        left: 40%;
+                        top: 20%;                        
+                    }
+                }
+                .sport-desc {
+                    p {
+                        color: #505050;
+                        font-size: 14px;       
+                    }
+                }
+            }
+        }
+    }
+}

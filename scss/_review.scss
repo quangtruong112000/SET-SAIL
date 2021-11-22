@@ -1,0 +1,135 @@
+.review {
+    .container {
+        background-image: url("../img/review-bg.jpg");
+        padding: 101px 0 100px;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        .review-detail {
+            .review-text {
+                max-width: 950px;
+                text-align: center;
+                margin: 0 auto 31px;
+                h1 {
+                    width: 100%;
+                    font-size: 65px;
+                    font-weight: 600;
+                    letter-spacing: -3.25px;
+                    line-height: 71px;
+                    color: white;
+                    margin: 0;
+                }
+                p {
+                    width: 100%;
+                    font-size: 17px;
+                    font-weight: 400;
+                    color: white;
+                    margin: 25px 0;  
+                }
+            }
+            .review-slide {
+                .review-list {                  
+                    grid-gap: 0 21px;
+                    .review-info {
+                        width: 100%;
+                        display: grid;
+                        grid-template-columns: auto auto;
+                        grid-gap: 0 21px;
+                        background-color: white;
+                        padding: 40px 31.887px;
+                        margin: 0 25px;
+                        border-radius: 5px;
+                        .review-avatar {
+                            img {
+                            }
+                        }
+                        &-detail {
+                            .review-address {
+                                padding-bottom: 10px;
+                                a {
+                                    font-size: 22px;
+                                    text-decoration: none;
+                                    color: $color-text;
+                                    line-height: 28px;
+                                    letter-spacing: -1.1px;
+                                }
+                            }
+                            .review-rating {
+                                i {
+                                    color: $primary-color;
+                                    font-size: 12px;
+                                }
+                            }
+                            .review-desc {
+                                p {
+                                    font-size: 14px;
+                                    color: #505050;
+                                    font-weight: 400;
+                                }
+                            }
+                            .review-name {
+                                h6 {
+                                    color: $color-text;
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    line-height: 1.4rem;
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//  slick slider
+.slick-track {
+    display: flex;
+    padding-bottom: 20px;
+}
+.slick-arrow {
+    width: 10px;
+    height: 10px;
+    border-radius: 100rem;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    z-index: 10;
+}
+.slick-prev {
+    border: 2px solid $primary-color;
+    background-color: $primary-color;
+    left: 47%;
+    width: 12px;
+    height: 12px;
+}
+.slick-next {
+    border: 2px solid $primary-color;
+    background-color: $primary-color;
+    right: 47%;
+    width: 12px;
+    height: 12px;
+}
+// .slick-dots {
+//   list-style-type: none;
+//   display: flex;
+//   align-items: center;
+//   gap: 0 15px;
+//   transform: translateY(50%);
+button {
+    font-size: 0;
+    border-radius: 100rem;
+    transition: all 0.2s linear;
+}
+.slick-active button {
+    background-color: $primary-color;
+    width: 45px;
+}
+
+
+@media screen and (max-width:1024px) {
+    
+}

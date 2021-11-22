@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+    overflow: hidden;
+    max-width: 1600px;
+}
+
+.container{
+    overflow: hidden;
+}
+
+@keyframes fadeInRight {
+    0% {
+        left: 0px;
+        top: -25px;
+    }
+    100% {
+        left: 0px;
+        top: 25px;
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        right: 0px;
+        top: -25px;
+    }
+    100% {
+        right: 0px;
+        top: 25px;
+    }
+}
+
+@keyframes moveLeltToRight {
+    0% {
+        right: 0;
+        top: -0;
+        left: -500px;
+    }
+    100% {
+        right: 0;
+        top: 0;
+    }
+}
+
+@keyframes moveRightToLeft {
+    0% {
+        right: -500px;
+        top: -10px;
+    }
+    100% {
+        right: 0;
+        top: -10px;
+    }
+}
+
+@keyframes BotToTop {
+    0% {
+        right: 0;
+        left: 0;
+        bottom: -50px;
+    }
+    100% {
+        right: 0;
+        left: 0;
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+    }
+}
+
+

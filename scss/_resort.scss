@@ -1,0 +1,115 @@
+.resort {
+    &-container {
+        .resort-label {
+            padding: 105px 0 0;
+            text-align: center;
+            span {
+                font-size: 33px;
+                color: $primary-color;
+                line-height: 1.8em;
+            }
+            h3 {
+                font-size: 65px;
+                line-height: 1.092307692307692em;
+                font-weight: 600;
+                letter-spacing: -0.05em;
+                margin: 0;
+            }
+            p {
+                margin: 12px 0 0;
+                font-size: 17px;
+                line-height: 28px;
+            }
+        }
+        .resort-list {
+            padding: 62px 0 170px;
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 0 25px;
+            .resort-item {
+                position: relative;
+                margin: 0 auto;
+                width: 100%;
+                max-width: 367px;
+                .resort-img {
+                    overflow: hidden;
+                    border-radius: 50%;
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                        border-radius: 50%;
+                        animation: zoom ease 4s;
+                        animation-iteration-count: infinite;
+                    }
+                    h4 {
+                        position: absolute;
+                        justify-content: space-between;
+                        width: 100%;
+                        top: 30%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size: 48px;
+                        font-family: "Satisfy";
+                        color: white;
+                        font-weight: 100;
+                        letter-spacing: 0;
+                        padding: 0 20px;
+                    }
+                }
+                .resort-star {
+                    position: absolute;
+                    top: 20px;
+                    right: 30px;
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    color: #fff;
+                    font-size: 17px;
+                    background: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .resort {
+        &-container {
+            max-width: 600px;
+            margin: 0 auto;
+            .resort-list {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 25px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .resort {
+        &-container {
+            margin: 0 auto;
+            .resort-label {
+                span {
+                    font-size: 33px;
+                }
+                h3 {
+                    font-size: 35px;
+                }
+                p {
+                    font-size: 17px;
+                }
+            }
+            .resort-list {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 25px;
+            }
+        }
+    }
+}

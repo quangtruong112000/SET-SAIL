@@ -1,0 +1,53 @@
+.bar {
+    position: fixed;
+    display: none;
+    right: -100%;
+    top: 0;
+    bottom: 0;
+    z-index: 99;
+    animation: moveRightToLeft 0.25s ease;
+    i {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 15px;
+    }
+    &-info {
+        max-width: 378px;
+        max-height: 625px;
+        background-color: #fff;
+        -webkit-box-shadow: inset 0px 0px 6px -3px #000000;
+        box-shadow: inset 0px 0px 6px -3px #000000;
+        text-align: center;
+        padding: 80px 40px 40px;       
+        .bar-logo {
+            &-img {
+                padding-bottom: 18px;
+            }
+        }
+        .bar-message {
+            &-img {
+                padding-bottom: 51px;
+            }
+        }
+        .bar-map {
+            &-img {
+                padding-bottom: 26px;
+            }
+        }
+        .bar-text {
+            margin: 10px 0;
+            padding-bottom: 36px;
+            p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+            }
+            h5 {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+}

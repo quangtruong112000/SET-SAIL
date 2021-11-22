@@ -1,0 +1,130 @@
+.footer {
+    &-container {
+        padding: 106px 80px 78px;
+        background-color: #2c2b2b;
+        .footer-list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 0 30px;
+            .footer-item {
+                color: #a9a9a9;
+                .logo-desc {
+                    text-align: left;
+                    font-size: 17px;
+                    line-height: 1.64em;
+                    font-weight: 400;
+                }
+                .footer-content-contact {
+                    margin-top: 17px;
+                    .footer-contact {
+                        display: flex;
+                        color: white;
+                        i {
+                            line-height: 24px;
+                        }
+                        span {
+                            padding: 0 0 0 10px;
+                            font-weight: 400;
+                            line-height: 24px;
+                        }
+                    }
+                }
+                .footer-head {
+                    font-size: 18px;
+                    line-height: 1.333333333333333em;
+                    font-weight: 600;
+                    color: white;
+                }
+                .footer-post {
+                    margin: 0 0 30px;
+                    &-location {
+                        text-decoration: none;
+                        font-size: 14px;
+                        color: #a9a9a9;
+                        font-weight: 400;
+                    }
+                    &-date {
+                        text-decoration: none;
+                        color: white;
+                        line-height: 14px;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                }
+                .form {
+                    &-flex {
+                        width: 95%;
+                        display: grid;
+                        grid-template-columns: 10% 90%;
+                        text-align: center;
+                        background-color: rgba(255, 255, 255, 0.25);
+                        margin-bottom: 7px;
+                        padding: 4px 0 4px 7px;
+
+                        i {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        input {
+                            outline: none;
+                            border: none;
+                            background: transparent;
+                            color: #fff;
+                            padding: 12px;
+                            font-size: 14px;
+                            &::placeholder {
+                                color: #fff;
+                            }
+                        }
+                    }
+                    button.footer-submit {
+                        background: $primary-color;
+                        color: #fff;
+                        width: 95%;
+                        font-size: 13px;
+                        text-transform: uppercase;
+                        padding: 14px 42px;
+                        display: inline-block;
+                        font-weight: 600;
+                        letter-spacing: 0.3px;
+                        line-height: 1.6;
+
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .footer {
+        &-container {
+            .footer-list {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer {
+        &-container {
+            padding: 25px;
+            .footer-list {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                .footer-item {
+                    padding-top: 10px;
+                    .form {
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

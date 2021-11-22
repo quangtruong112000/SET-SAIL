@@ -1,0 +1,121 @@
+.team {
+    .container {
+        .team-list {
+            .team-info {
+                position: relative;
+                &:hover .team-desc {
+                    display: block;
+                    animation: BotToTop 0.5s ease;
+                }
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                    cursor: pointer;
+                }
+
+                .team-desc {
+                    display: none;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                    padding: 22px 25px 26px;
+                    color: white;
+                    background-color: $primary-color;
+                    h5 {
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        margin: 0;
+                    }
+                    p {
+                        margin: 11px 0 0;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+                    .team-icon {
+                        margin: 13px 0 0;
+                        font-size: 12px;
+                        i {
+                            margin: 0 24px 0 0;
+                        }
+                    }
+                }
+            }
+        }
+        .team-container {
+            background-color: $primary-color;
+            #numbers {
+                padding: 20px 0;
+                color: white;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                .number-content {
+                    text-align: center;
+                    padding: 50px 0;
+                    .fig-number {
+                        padding: 20px 0 30px;
+                        font-size: 65px;
+                        font-weight: 600;
+                    }
+                    span {
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+.slick-track {
+    display: flex;
+    padding: 0;
+}
+.slick-prev {
+    border: none;
+    background-color: white;
+    left: 0;
+    width: 0;
+    height: 0;
+    top: -100px;
+    display: none;
+}
+.slick-next {
+    border: none;
+    background-color: white;
+    right: 0;
+    width: 0;
+    top: -100px;
+    height: 0;
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .team {
+        .container {
+            .team-container {
+                #numbers {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .team {
+        .container {
+            .team-container {
+                #numbers {
+                    grid-template-columns: repeat(1, 1fr);
+                    .number-content {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
